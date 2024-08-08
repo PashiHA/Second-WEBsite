@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прерывистая тень</title>
+    <style>
+        body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.spacer {
+    height: 100vh;
+    width: 100%;
+    background-color: #f0f0f0;
+}
+
+img {
+    width: 300px;
+    opacity: 0;
+    transform: translate(50px, 20px);
+    transition: opacity 1.3s ease-out, transform 1.3s ease-out;
+}
+
+img.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="spacer"></div>
+        <img src="https://via.placeholder.com/300" alt="Example Image" class="fade-in">
+        <div class="spacer"></div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const images = document.querySelectorAll('.fade-in');
+
+    function checkPosition() {
+        const windowHeight = window.innerHeight;
+        images.forEach(image => {
+            const positionFromTop = image.getBoundingClientRect().top;
+
+            if (positionFromTop - windowHeight <= 0) {
+                image.classList.add('visible');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', checkPosition);
+    window.addEventListener('resize', checkPosition);
+    checkPosition();
+});
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header id="header" class="header"> 
+        <div id="main" class="nav-bar">
+            <div class="name-company">Design thinking</div>
+            <div class="menu menu-smooth-scroll">
+                <div data-target="main">Главная</div>
+                <div data-target="about-us">О нас</div>
+                <div data-target="service">Услуги</div>
+                <div data-target="reviews">Отзывы</div>
+            </div>
+            <div class="menu-toggle-conteiner">
+                <div class="tel">+373 (695) 33 098</div>
+                <div onclick="openMenuToggle()" class="menu-toggle" >
+                    <div class="vector">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-title-conteiner">
+            <div class="header-title">
+                <h1>Объединяем дизайн-мышление и технологии</h1>
+                <div>Мы — digital-агентство полного цикла. Все, что вы могли бы от него пожелать, и не только это, красиво и тщательно продумано.</div>
+                <button class="smooth-scroll">Присоединиться</button>
+            </div>
+            <div class="header-img">
+                <div class="header-img-istock"><img src="./img/iStock-801396718.png" alt=""></div>
+                <div><img src="./img/vr-1920x1280.png" alt=""></div>
+                <div>
+                    <div>
+                        <div class="header-img-vector">
+                            <div><img src="./img/Vector.png" alt=""></div>
+                        </div>
+                        <div class="header-img-text">
+                            <div>
+                                <h3>76%</h3>
+                                <h4>доход</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </header>
+    <div class="menu-toggle-close menu-smooth-scroll ">
+        <div data-target="main">Главная</div>
+        <div data-target="about-us">О нас</div>
+        <div data-target="service">Услуги</div>
+        <div data-target="reviews">Отзывы</div>
+    </div>
+    <main>
+        <div id="about-us" class="agency">
+            <h3 class="main-title">Инновационное агентство</h3>
+            <div class="agency-block">
+                <img src="./img/Rectangle 5.png" alt="">
+                <div>
+                    <h4>Уникальный Дизайн</h4>
+                    <div><img src="./img/layers.png" alt=""></div>
+                    <p>Мы обеспечиваем 100% гарантию и обеспечиваем мгновенный ответ, чтобы помочь вам добиться успеха.</p>
+                    <button class="smooth-scroll">Узнать подробнее</button>
+                </div>
+            </div>
+            <div class="agency-block">
+                <img src="./img/brending main.png" alt="">
+                <div>
+                    <h4>Цифровой брендинг и маркетинг</h4>
+                    <div><img src="./img/brending.png" alt=""></div>
+                    <p>Мы обеспечиваем 100% гарантию и обеспечиваем мгновенный ответ, чтобы помочь вам добиться успеха.</p>
+                    <button class="smooth-scroll">Узнать подробнее</button>
+                </div>
+            </div>
+            <div class="agency-block">
+                <img src="./img/seo main.png" alt="">
+                <div>
+                    <h4>SEO и аналитика</h4>
+                    <div><img src="./img/seo.png" alt=""></div>
+                    <p>Мы обеспечиваем 100% гарантию и обеспечиваем мгновенный ответ, чтобы помочь вам добиться успеха.</p>
+                    <button class="smooth-scroll">Узнать подробнее</button>
+                </div>
+            </div>
+            <div class="agency-block">
+                <img src="./img/solves main.png" alt="">
+                <div>
+                    <h4>Быстрые решения</h4>
+                    <div><img src="./img/solves.png" alt=""></div>
+                    <p>Мы обеспечиваем 100% гарантию и обеспечиваем мгновенный ответ, чтобы помочь вам добиться успеха.</p>
+                    <button class="smooth-scroll">Узнать подробнее</button>
+                </div>
+            </div>
+        </div>
+        <div id="service" class="services">
+            <h3 class="main-title">Наши услуги</h3>
+            <div class="services-conteiner">
+                <div class="service-cards-visible">
+                    <div class="service-card">
+                        <h3>Аналитика</h3>
+                        <p>Мы обеспечиваем 100% гарантию и обеспечиваем мгновенный ответ, чтобы помочь вам добиться успеха.</p>
+                        <div class="service-card-circle"><img src="./img/analytics.svg" alt=""></div>
+                        <img class="service-card-rectangle" src="./img/Rectangle 3.png" alt="">
+                    </div>
+                    <div class="service-card">
+                        <h3>Веб-разработка</h3>
+                        <p>Мы обеспечиваем 100% гарантию и обеспечиваем мгновенный ответ, чтобы помочь вам добиться успеха.</p>
+                        <div class="service-card-circle"><img src="./img/file.svg" alt=""></div>
+                        <img class="service-card-rectangle" src="./img/Rectangle web.png" alt="">
+                    </div>
+                    <div class="service-card">
+                        <h3>Мобильные приложения</h3>
+                        <p>Мы обеспечиваем 100% гарантию и обеспечиваем мгновенный ответ, чтобы помочь вам добиться успеха.</p>
+                        <div class="service-card-circle"><img src="./img/mobile.svg" alt=""></div>
+                        <img class="service-card-rectangle" src="./img/Rectangle mobile.png" alt="">
+                    </div>
+                    <div class="service-card">
+                        <h3>Дизайн</h3>
+                        <p>Мы обеспечиваем 100% гарантию и обеспечиваем мгновенный ответ, чтобы помочь вам добиться успеха.</p>
+                        <div class="service-card-circle"><img src="./img/paint-palette.svg" alt=""></div>
+                        <img class="service-card-rectangle" src="./img/Rectangle disign.png" alt="">
+                    </div>
+                    <div class="service-card">
+                        <h3>Мобильные приложения</h3>
+                        <p>Мы обеспечиваем 100% гарантию и обеспечиваем мгновенный ответ, чтобы помочь вам добиться успеха.</p>
+                        <div class="service-card-circle"><img src="./img/mobile.svg" alt=""></div>
+                        <img class="service-card-rectangle" src="./img/Rectangle mobile.png" alt="">
+                    </div>
+                    <div class="service-card">
+                        <h3>Дизайн</h3>
+                        <p>Мы обеспечиваем 100% гарантию и обеспечиваем мгновенный ответ, чтобы помочь вам добиться успеха.</p>
+                        <div class="service-card-circle"><img src="./img/paint-palette.svg" alt=""></div>
+                        <img class="service-card-rectangle" src="./img/Rectangle disign.png" alt="">
+                    </div>
+                    <div class="service-card">
+                        <h3>Аналитика</h3>
+                        <p>Мы обеспечиваем 100% гарантию и обеспечиваем мгновенный ответ, чтобы помочь вам добиться успеха.</p>
+                        <div class="service-card-circle"><img src="./img/analytics.svg" alt=""></div>
+                        <img class="service-card-rectangle" src="./img/Rectangle 3.png" alt="">
+                    </div>
+                    <div class="service-card">
+                        <h3>Веб-разработка</h3>
+                        <p>Мы обеспечиваем 100% гарантию и обеспечиваем мгновенный ответ, чтобы помочь вам добиться успеха.</p>
+                        <div class="service-card-circle"><img src="./img/file.svg" alt=""></div>
+                        <img class="service-card-rectangle" src="./img/Rectangle web.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="conteiner-arrows">
+                <div onclick="slideLeft()" class="arrow-left"><img src="./img/arrow-pointing-to-left.svg" alt=""></div>
+                <div class="arrow-line"></div>
+                <div onclick="slideRight()" class="arrow-right"><img src="./img/arrow-pointing-to-right.svg" alt=""></div>
+            </div>
+        </div>
+        <div id="reviews" class="reviews">
+            <h3 class="main-title">Отзывы</h3>
+            <div class="reviews-conteiner">
+                <div class="review-block">
+                    <div class="review-block-conteiner">
+                        <img class="review-block-conteiner-photo" src="./img/Ellipse.png" alt="">
+                        <p>Мы обеспечиваем 100% гарантию и обеспечиваем мгновенный ответ, чтобы помочь вам добиться успеха.</p>
+                        <h3>Елена Владимировна</h3>
+                        <h4>Business Consultant @ Google</h4>
+                        <img class="review-block-conteiner-elem" src="./img/right-quote-sign.png" alt="">
+                    </div>
+                </div>
+                <div class="review-block">
+                    <div class="review-block-conteiner">
+                        <img class="review-block-conteiner-photo" src="./img/Ellipse (1).png" alt="">
+                        <p>Мы обеспечиваем 100% гарантию и обеспечиваем мгновенный ответ, чтобы помочь вам добиться успеха.</p>
+                        <h3>Ольга Николаевна</h3>
+                        <h4>Business Consultant @ Google</h4>
+                        <img class="review-block-conteiner-elem" src="./img/right-quote-sign.png" alt="">
+                    </div>
+                </div>
+                <div class="review-block">
+                    <div class="review-block-conteiner">
+                        <img class="review-block-conteiner-photo" src="./img/Ellipse (2).png" alt="">
+                        <p>Мы обеспечиваем 100% гарантию и обеспечиваем мгновенный ответ, чтобы помочь вам добиться успеха.</p>
+                        <h3>Семен Иванович</h3>
+                        <h4>Business Consultant @ Google</h4>
+                        <img class="review-block-conteiner-elem" src="./img/right-quote-sign.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer" class="footer-standart" >
+        <div class="footer-conteiner">
+            <div class="footer-form">
+                <h3 class="footer-title">Оставить заявку</h3>
+                <form class="contact-form" id="myForm">
+                    <input class="contact-form-input " placeholder="Имя" type="text" id="name" name="name" >
+                    <div class="clear" id="error-name">Введите имя</div>
+                    <input class="contact-form-input" placeholder="Телефон" type="tel" id="phone" name="phone" >
+                    <div class="clear" id="error-tel">Введите номер телефона</div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="checkbox" name="consent" >
+                        <div class="custom-checkbox"></div>
+                        <label for="consent">Даю согласие на обработку персональных данных</label>
+                    </div>
+                    <div class="clear" id="error-checkbox">Пожалуйста, дайте согласие</div>
+                    <button  type="submit">Оставить заявку</button>
+                </form>
+            </div>
+            <div class="contact-social">
+                <div class="contacts">
+                    <h3 class="footer-title"></h3>
+                    <div class="contacts-info">
+                        <h4>Адрес</h4>
+                        <div>ул. Климашкина, д. 16 </div>
+                        <div>example@gmail.com</div>
+                        <div>+373 (695) 33 098</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="social-media">
+                        <div class="social-media-info">
+                            <h4>Соцсети</h4>
+                            <div>
+                                <a href=""><img src="./img/Group.svg" alt=""></a>
+                                <a href=""><img src="./img/vk.svg" alt=""></a>
+                                <a href=""><img src="./img/inst.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="rights">
+                © ManTanna 2023. All rights reserved.
+        </div>
+        
+    </footer>
+    <footer  class="footer-submit ">
+        <div class="footer-conteiner">
+            <div class="footer-form-submit">
+                <h3 class="footer-title">Спасибо за обращение!</h3>
+                <div>Наш менеджер свяжется с Вами в течение 15 минут.</div>
+                <button onclick="submitRequest()" class="footer-form-submit-button" type="submit">Оставить заявку</button>
+            </div>
+            <div class="contact-social">
+                <div class="contacts">
+                    <h3 class="footer-title"></h3>
+                    <div class="contacts-info">
+                        <h4>Адрес</h4>
+                        <div>ул. Климашкина, д. 16 </div>
+                        <div>example@gmail.com</div>
+                        <div>+373 (695) 33 098</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="social-media">
+                        <div class="social-media-info">
+                            <h4>Соцсети</h4>
+                            <div>
+                                <img src="./img/Group.svg" alt="">
+                                <img src="./img/vk.svg" alt="">
+                                <img src="./img/inst.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rights rights2">
+                © ManTanna 2023. All rights reserved.
+        </div>
+        
+    </footer>
+</body>
+<script src="./index.js"></script>
+</html>
